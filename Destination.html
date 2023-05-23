@@ -1,0 +1,269 @@
+<!--DEstination Page-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist Attractions</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+    
+        #TravelDiary {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+    
+        #TravelDiary form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        #TravelDiary form input[type="text"],
+        #TravelDiary form input[type="date"] {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        
+        #TravelDiary form input[type="submit"] {
+            padding: 10px 20px;
+            background-color:rgb(26, 158, 210);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        
+        .Places {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        
+        .Places div {
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .Places div:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .Places h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        
+        .Places h4 {
+            font-size: 16px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        .Places p {
+            margin-bottom: 10px;
+        }
+        
+        .Places img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        
+        .container {
+            text-align: center;
+            margin-top: 10px;
+        }
+        
+        .container button {
+            padding: 10px 20px;
+            background-color:rgb(26, 158, 210);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .container button:hover {
+            background-color: green;
+        }
+        
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        input[type="text"],
+        input[type="date"] {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-right: 10px;
+        }
+        
+        input[type="submit"] {
+            padding: 10px 20px;
+            background-color:rgb(26, 158, 210);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: green;
+        }
+        
+        @media screen and (min-width: 600px) {
+            .Places div {
+                width: 48%;
+            }
+        }
+        
+        @media screen and (min-width: 900px) {
+            .Places div {
+                width: 31.33%;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+    <section id="TravelDiary">
+        <form action="search.php" method="GET">
+            <input type="text" name="destination" placeholder="Enter destination">
+            <input type="date" name="travel-date" placeholder="Select travel date">
+            <!-- Other relevant search inputs -->
+            <input type="submit" value="Search">
+        </form>
+        <h2>Popular Destinations across India</h2>
+        <div class="Places">
+            <div>  
+                <h3>Murudureshwara Temple, Karnataka</h3>
+                <img src="https://assets.traveltriangle.com/blog/wp-content/uploads/2018/06/shiva-temple1.jpg">
+                <h4>Interesting facts about Murudeshwara temple:</h4>
+                <p>
+                    The Shiva Statue is the second tallest Shiva statue in the world, after the one in Nepal, known as the Kailashnath Mahadev Statue.
+                    The statue has been built in a way that allows sunlight to fall directly on it, giving it the appearance of sparkling all the time. 
+                    There is a Rameshwara Linga at the bottom of the hill where the devotees can perform rituals on their own without a priest. 
+                </p>
+                <nav>
+                    <div class="container">
+                        <a href="https://en.wikipedia.org/wiki/Murdeshwar">
+                            <button>
+                                Know more
+                            </button>
+                        </a>
+                    </div>
+                </nav>
+                <nav>
+                    <a href="Package.html"><button>View Package</button></a>
+                </nav>
+            </div>
+            <div>  
+                <h3>Thousand Pillars Temple (Warangal), Telangana</h3>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS7wtvlXxIusOu6GByGTIbG8k9-o35vMlLhJQ&usqp=CAU">
+                <h4>Interesting facts about Thousand Pillars temple:</h4>
+                <p>
+                    <h5>Architecture</h5>
+                    This temple is one of the standing examples of the expertise of the exemplary craftsmanship during that era. The temple is supported by a thousand richly carved pillars each of which are placed carefully in a way that it stands out of the view of the deities. The shades and the beautiful sculptures decorate each of the ways of the temple and add a splendid magnificence to the structure. The temple stands on a platform of 1 meter, which slopes down towards the Hanumakonda hill.
+
+                    <h5>Star Shaped Architecture</h5>
+                    One of the most interesting aspects of the architecture of the Thousand Pillar temple is that it has a star-shaped architecture.
+                </p>
+                <nav>
+                    <div class="container">
+                        <a href="https://en.wikipedia.org/wiki/Thousand_Pillar_Temple">
+                            <button>
+                                Know more
+                            </button>
+                        </a>
+                    </div>
+                </nav>
+                <nav>
+                    <a href="Package.html"><button>View Package</button></a>
+                </nav>
+            </div>
+            <div>  
+                <h3>Cherrapunji, Meghalaya</h3>
+                <img src="https://s3.india.com/travel/wp-content/uploads/2016/12/Cherrapunji.jpg">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/f/ff/Cherrapunji.jpg">
+                <h4>Interesting facts about Cherrapunji:</h4>
+                <p>
+                    The most wettest part on the Planet Earth
+                </p>
+                <nav>
+                    <div class="container">
+                        <a href="https://en.wikipedia.org/wiki/Cherrapunji">
+                            <button>
+                                Know more
+                            </button>
+                        </a>
+                    </div>
+                </nav>
+                <nav>
+                    <a href="Package.html"><button>View Package</button></a>
+                </nav>
+            </div>
+            <div>  
+                <h3>Taj Mahal, Agra U.P</h3>
+                <img src="https://www.easemytrip.com/travel/img/sunset-agra.jpg">
+                <h4>Interesting facts about Taj Mahal:</h4>
+                <p>
+                    The architecture of the Taj Mahal truly expands and depicts the early Mughal designs which is a combination of Indian, Persian and Islamic design tradition.
+                </p>
+                <nav>
+                    <div class="container">
+                        <a href="https://en.wikipedia.org/wiki/Taj_Mahal">
+                            <button>
+                                Know more
+                            </button>
+                        </a>
+                    </div>
+                </nav>
+                <nav>
+                    <a href="Package.html"><button>View Package</button></a>
+                </nav>
+            </div>
+        </div>
+    </section>
+    <div>
+        <nav>
+            <div class="container">
+                <a href="index.html">
+                    <button>
+                        Go back
+                    </button>
+                </a>
+            </div>
+        </nav>
+    </div>
+    
+</body>
+</html>
